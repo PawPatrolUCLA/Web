@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Paw Patrol</title>
+        <link rel="stylesheet" href="style.css">
+        <script>team_name = "hackers"</script>
+        <script type="module" src="communication.js"></script>
+    </head>
+ 
+</head>
+    <div style="text-align: center;"> 
+        <a href="#anchor-name">Features</a>
+        <a href="#anchor-name2">Applications</a>
+        <a href="#code">Code</a>
+        <a href="#anchor-name4">Iterations</a>
+        <a href="#anchor-name3">Meet Our Team</a>
+    </div>
+<body>
+  <header>
+    <div style="text-align: center;"> 
+    <img src = "images/removebackground.png" width="300px" height="auto"/>
+    </div>
+    <h1>CLAW Patrol</h1>
+    <h2>Our Fate is in Their Claws and Paws</h2>
+  </header>
+  <main>
+    <p>Hello World, we are CLAW Patrol.</p> 
+     <p> We are a team of 6 and each of our team members has a specific set of skills based on emergency services professions. Our mission is to rescue the Bruin engineers that have been trapped within Boelter Hall.</p>
+   <p>Over the last 48 hours, we have been tirelessly working to bring to life our ingenious creation: the remarkable <b>CLAWNTLET</b>. This cutting-edge device will serve as an invaluable aid during our daring rescue operation!</p>
+   <div style="text-align: center;"> 
+    <img src = "images/finalcad.jpeg" width="300px" height="auto"/>
+    </div>
+      <p>Now let's enter Boelter Hall to rescue our Bruin engineers! We can see the conditions of Boelter Hall using the table below which displays real time data straight from the <b>CLAWNTLET</b>.</p>
+
+
+ <table class="center">
+  <tr>
+<td>Humidity</td>
+<td>Temperature</td>
+<td>Distance</td>
+<td>Gas Level</td>
+</tr>
+<tr>
+<td>HERE</td>
+<td>HERE</td>
+<td>HERE</td>
+<td>HERE</td>
+</tr>
+</table> 
+
+
+
+    <section>
+     <a id="anchor-name"> </a>
+      <h2>FEATURES</h2>
+      <p>In pursuit of this critical task, we carefully selected specific sensors to equip our <b>CLAWNTLET</b>, each chosen for its unique capabilities and contributions to the success of our mission.</p>
+      <ul><b><li>State of the Art Sensors</li></b>
+      <p>As we navigate through Boelter Hall, several state of the art sensors will gather and display information on an OLED screen placed on the <b>CLAWNTLET</b>. It includes a Gas Detection Module, Ultrasonic Sensor, NeoPixel Ring, and Temperature/Humidity Sensor.</p>
+      <div style="text-align: center;"> 
+        <img src = "images/gas.jpg" width="200px" height="auto"/>
+         <img src = "images/ultra.jpg" width="200px" height="auto"/>
+          <img src = "images/ring.jpg" width="200px" height="auto"/>
+           <img src = "images/am.jpg" width="200px" height="auto"/>
+        </div>
+        <li><b>Gas Detection Module</b>: able to read the potentially harmful gasses in a room and relays the information to the <b>CLAWNTLET</b> for the user to see.</li>
+        <li><b>Ultrasonic Sensor</b>: used to calculate the distance in cm between an object and the <b>CLAWNTLET</b> to be displayed on the OLED screen.</li>
+        <li><b>NeoPixel Ring</b>: used to warn the user of potentially harmful conditions by lighting up 12 LEDs with specific colors to indicate danger levels.</li>
+        <li><b>Temperature/Humidity Sensor</b>: able to read the temperature and humidity in a room and relays the information to the <b>CLAWNTLET</b> for the user to see.</li>
+        <br><li><b>OLED Screen</b></li>
+      <p>The <b>CLAWNTLET</b> features a state of the art OLED screen that reads the various sensors located on the <b>CLAWNTLET</b> and displays the information for the user to see.</p>
+        <div style="text-align: center;"> 
+                <img src = "images/oled.jpeg" width="300px" height="auto"/>
+        </div>
+
+
+
+ <a id="code"> </a> 
+<h3>CODE</h3>
+<div style="text-align: center;"> 
+<p>Full code can be found on our <a target="_blank" rel="noopener noreferrer" href="https://github.com/PawPatrolUCLA/Arduino">GitHub.</a> </p> 
+</div>
+ <p>We designed our code with the victims in Boelter Hall in mind. Using the various electronics connected to the ESP32, the code is responsible for communicating with the sensors, OLED screen, and even this website. The code is uploaded to the ESP32 using the Arduino IDE and is the heart of our <b>CLAWNTLET</b>. </p>
+ <ul><b><li>ESP32 with Arduino IDE</b></li>
+        <div style="text-align: center;"> 
+            <img src = "images/esp.jpeg" width="300px" height="auto"/>
+        </div>
+      <p>Code is uploaded onto the ESP32 using the Arduino IDE and is powered by a mobile power bank.</p>
+      <p>As with all coding, it took a lot of debugging to get it working. An example of an issue we encountered with the ESP32 was that it had only one SDA and one SCL pin. This led to errors since both the OLED and temperature/humidity sensor required these pins. However, after conducting further research, we discovered that it is possible to share the SDA and SCL pins, which resolved the problem.</p>
+      <b><li>CAD</li></b>
+        <p>Below is the early prototypes of our CLAWNTLET (wrist and hand).</p>     
+
+
+
+
+
+
+
+
+
+  </div>
+      </ul>
+      <a id="anchor-name2"> </a>
+      <h3>APPLICATIONS</h3>
+      <ul><b><li>ESP32 with Arduino IDE Errors</b></li>
+        <div style="text-align: center;"> 
+            <img src = "images/error.png" width="300px" height="auto"/>
+        </div>
+      <p>Code is uploaded onto the ESP32 using the Arduino IDE and is powered by a mobile power bank.</p>
+      <p>As with all coding, it took a lot of debugging to get it working. An example of an issue we encountered with the code involved simple mistakes from missing semicolons to bigger ones like calling the wrong library. Debugging the code consists of headscratches and lots of Google Searches.</p>
+      <b><li>CAD</li></b>
+        <p>Below is the early prototypes of our CLAWNTLET (wrist and hand).</p>
+    <div style="text-align: center;"> 
+        
+        <img src = "images/wrist.gif" width="200" height="auto">
+        <img src = "images/hand.gif" width="200" height="auto">
+        
+    </div>
+        <p>However, we did not like how it turned out after printing and decided to make a new one on the second day.</p>
+        <p>Our new design came out simpler and was printed in about 7 hours.</p>
+        <div style="text-align: center;"> 
+            <img src = "images/finalcad.jpeg" width="200px" height="auto"/>
+        </div>
+  <a id="anchor-name4"> </a>
+ <h3>ITERATIONS</h3>
+
+
+
+        <h3>MEET OUR TEAM</h3>
+        <a id="anchor-name3"> </a>
+        
+        <div class="image-container">
+    <img src = "images/chloandmin.jpg">
+          <ul><b>Chloe and Min</b>
+    <li>Chloe is a chemical engineering major and she plays the role as the team's designer. Apart from her academic pursuit, her hobbies are crochet, hiking, baking, and more!</li>
+      <li>Min, a two-year-old Golden Retriever, is a pandemic puppy who might appear a bit shy when you first meet him. However, once you get to know him, he is affectionate and intelligent!</li>
+          </ul>
+  </div>
+        
+        <div class="image-container">
+    <img src = "images/derekcat.jpeg">
+          <ul><b>Derek and Pancake</b>
+    <li>Derek is an electrical engineering major and collaborated with Sina to work on the ESP32 code and CAD. He likes playing League of Legends for hours on end, baking, and fishing.</li>
+      <li>Pancake is a four-year-old Orange Tabbie that hates being picked up. He is quick to scare, but warms up quickly when you pet him.</li>
+          </ul>
+  </div>
+        
+        <div class="image-container">
+    <img src = "images/sinacat.jpeg">
+          <ul><b>Sina and Meow</b>
+    <li>Sina is an electrical engineering major and collaborated with Derek to work on the ESP32 code and CAD. He likes to stay in extravagent hotels and swim in their swimming pools.</li>
+      <li>Meow is a 10-month-old cat of unknown origin and is a big dork. He likes to photobomb Sina and hogs the bed for himself.</li>
+          </ul>
+  </div>
+  </main>
+</body>
+
+
+    
+</html>
