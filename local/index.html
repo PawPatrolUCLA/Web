@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Paw Patrol</title>
+        <title>Claw Patrol</title>
         <link rel="stylesheet" href="style.css">
-        <script>team_name = "hackers"</script>
+        <script>team_name = "ClawPatrol"</script>
         <script type="module" src="communication.js"></script>
     </head>
 
@@ -29,23 +29,24 @@
      <p> We are a team of 6 and each of our team members has a specific set of skills based on emergency services professions. Our mission is to rescue the Bruin engineers that have been trapped within Boelter Hall.</p>
    <p>Over the last 48 hours, we have been tirelessly working to bring to life our ingenious creation: the remarkable <b>CLAWNTLET</b>. This cutting-edge device will serve as an invaluable aid during our daring rescue operation!</p>
    <div style="text-align: center;"> 
-    <img src = "images/finalall.jpeg" width="700px" height="auto"/>
+    <img src = "images/finalall.jpg" width="900" height="auto"/>
     </div>
       <p>Now let's enter Boelter Hall to rescue our Bruin engineers! We can see the conditions of Boelter Hall using the table below which displays real time data straight from the <b>CLAWNTLET</b>.</p>
 
 
+
  <table class="center">
   <tr>
-<td>Humidity</td>
-<td>Temperature</td>
-<td>Distance</td>
-<td>Gas Level</td>
+<td>Humidity in %(Ambient:)</td>
+<td>Temperature in C(Ambient: 22C)</td>
+<td>Distance in CM</td>
+<td>Gas Level in PPM(Ambient:)</td>
 </tr>
 <tr>
-<td>HERE</td>
-<td>HERE</td>
-<td>HERE</td>
-<td>HERE</td>
+<td><p id="hum"></p></td>
+<td><p id="temp"></p></td>
+<td><p id="cm"></p></td>
+<td><p id="gasRead"></p></td>
 </tr>
 </table> 
 
@@ -58,10 +59,7 @@
       <ul><b><li>State of the Art Sensors</li></b>
       <p>As we navigate through Boelter Hall, several state of the art sensors will gather and display information on an OLED screen placed on the <b>CLAWNTLET</b>. It includes a Gas Detection Module, Ultrasonic Sensor, NeoPixel Ring, and Temperature/Humidity Sensor.</p>
    <div style="text-align: center;"> 
-        <img src = "images/gas.jpg" width="200px" height="auto"/>
-         <img src = "images/ultra.jpg" width="200px" height="auto"/>
-          <img src = "images/ring.jpg" width="200px" height="auto"/>
-           <img src = "images/am.jpg" width="200px" height="auto"/>
+        <img src = "images/newallsensor.jpeg" width="200px" height="auto"/>
         </div>
         <li><b>Gas Detection Module</b>: able to read the potentially harmful gasses in a room and relays the information to the <b>CLAWNTLET</b> for the user to see.</li>
         <li><b>Ultrasonic Sensor</b>: used to calculate the distance in cm between an object and the <b>CLAWNTLET</b> to be displayed on the OLED screen.</li>
@@ -85,9 +83,10 @@
         <div style="text-align: center;"> 
             <img src = "images/error.png" width="700px" height="auto"/>
         </div>
-      <p>Code is uploaded onto the ESP32 using the Arduino IDE and is powered by a mobile power bank.</p>
-      <p>As with all coding, it took a lot of debugging to get it working. An example of an issue we encountered with the code involved simple mistakes from missing semicolons to bigger ones like calling the wrong library. Debugging the code consists of headscratches and lots of Google Searches.</p></p>
+<p>Code is uploaded onto the ESP32 using the Arduino IDE and is powered by a mobile power bank.</p>
+<p>As with all coding, it took a lot of debugging to get it working. An example of an issue we encountered with the code involved simple mistakes from missing semicolons to bigger ones like calling the wrong library. Debugging the code consists of headscratches and lots of Google Searches.</p>
     
+      
 
 
 
@@ -97,8 +96,13 @@
  <p>Like the coding example above, designing the gauntlet was not always easy. We encountered a lot of problems in CAD, coding, circuits, and Arduinos.</p>
  <ul><b><li>Solution</b></li>
       <p> The mindset we adopted to solve most of these problems was making sure each component worked by itself before it was implemented into the gauntlet. This way, each iteration of our design had only one error at a time. Solving the error, we could move on to the next iteration knowing that all previous iterations worked and whatever we were implementing in the current iteration was the issue.</p>
+      <div style="text-align: center;"> 
+        <img src = "images/prob.jpg" width="600px" height="auto"/>
+    </div>
      <p>One example of an engineering problem was the fact that there is only 1 SDA and 1 SCL pin on the ESP32, which caused errors for us because the OLED and Temperature/Humidity Sensor both require it to talk to the ESP32. With the mindset detailed above, we knew that we only needed to solve the SDA and SCL sharing pins. With more research, we found out it was indeed possible to share SDA and SCL between devices and wired the pins to do so on the breadboard.</p>
-    
+     <div style="text-align: center;"> 
+        <img src = "images/sol.jpg" width="600px" height="auto"/>
+    </div>
 
 
 
@@ -136,7 +140,7 @@
 
 
          <ul><b><li>Final CAD Design</b></li>
-        <p>Our final design took the cylinder within the second design and added a holder for the battery and breadboard to sit in. It was also a two piece design with a knuckle holder that housed the sensors which was inspired by the bowling ball. It took about 14 hours for both pieces to finish printing using PLA filament. </p>
+        <p>Our final design took the cylinder within the second design and added a holder for the battery and breadboard to sit in it. It was also a two piece design with a knuckle holder that housed the sensors which was inspired by the bowling ball. It took about 14 hours for both pieces to finish printing using PLA filament. </p>
         <div style="text-align: center;"> 
             <img src = "images/finalcad.jpeg" width="300px" height="auto"/>
             <img src = "images/knuck.png" width="600px" height="auto"/>
